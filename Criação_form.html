@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criação do meu Form</title>
+  </head>
+
+  <body>
+    <h2>Envio dos meus dados</h2>
+    <form action="" autocomplete="on">
+      Primeiro nome: <input type="text" name="pnome" /> <br /><br />
+      Sobrenome :<input type="text" name="sobrenome" /> - Senha :<input
+        type="password"
+        password="Senha"
+      /><br /><br />
+
+      Data de nascimento: <input type="date" data="data_de_nasc" /> - Foto:
+      <input type="file" /> <br /><br />
+
+      <div>
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select name="nacionalidade" id="nacionalidade">
+          <option value="selecionar">Qual sua nacionalidade?</option>
+          <option value="russo">Russo</option>
+          <option value="argentino">Argentino</option>
+          <option value="brasileiro">Brasileiro</option>
+        </select>
+      </div>
+      <br />
+      Gênero:
+      <label for="feminino">F</label>
+      <input type="radio" name="gender" id="feminino" value="feminino" />
+      <label for="masculino">M</label>
+      <input type="radio" name="gender" id="masculino" value="masculino" />
+      <p></p>
+      <p><b>Deixe aqui seu texto</b></p>
+      <textarea
+        name="descrição"
+        id="descrição"
+        cols="30"
+        rows="10"
+        placeholder="Digite seu texto"
+      ></textarea
+      ><br />
+      <input type="submit" value="Enviar dados" />
+    </form>
+  </body>
+</html>
